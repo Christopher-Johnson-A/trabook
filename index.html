@@ -1,122 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabook</title>
-    <link rel="icon" href="https://travelling-agency-lp-xf6p.vercel.app/static/media/trabooklogo.5c9b07cddd138427d9fd191595e04136.svg">
-    <style>
-     body{
-        font-family: Arial, sans-serif;
-      margin: 0px 200px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabook</title>
+  <link rel="icon" href="https://travelling-agency-lp-xf6p.vercel.app/static/media/trabooklogo.5c9b07cddd138427d9fd191595e04136.svg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
       padding: 0;
-      background-color: aliceblue;
-      color: black;
+      background-color: #fffaf5;
       transform: scale(0.8);
-     }
-     header {
+    }
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 50px;
     }
-    header a {
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header nav a {
+      margin: 0 15px;
       text-decoration: none;
-      color: black;
-      margin-left: 20px;
+      color: #555;
+    }
+    header .actions a {
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .login {
+      color: #ff7b47;
+    }
+    .signup {
+      background-color: #ff7b47;
+      color: white;
     }
     .hero-section {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       padding: 50px;
     }
-    .hero-section .text {
-      max-width: 500px;
+    .hero-content {
+      max-width: 50%;
     }
-    .hero-section h1 {
-      font-size: 3rem;
-      color: rgba(255, 94, 0, 0.979);
+    .hero-content h1 {
+      font-size: 48px;
+      line-height: 1.2;
     }
-    .hero-section p {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      line-height: 1.6;
+    .hero-content h1 span {
+      color: #ff7b47;
     }
-    .hero-section .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
+    .hero-content p {
+      color: #666;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    .hero-content .cta-button {
+      padding: 15px 30px;
+      background-color: #ff7b47;
       color: white;
-      background-color:  rgba(255, 94, 0, 0.979) ;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .hero-image {
+      position: relative;
+    }
+    .hero-image img {
+      max-width: 100%;
+    }
+    .info-box {
+      position: absolute;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .info-box img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .info-box.best-tour {
+      top: 10%;
+      left: 60%;
+    }
+    .info-box.reviews {
+      bottom: 20%;
+      left: 65%;
+    }
+    .info-box.explore {
+      top: 30%;
+      right: 10%;
+    }
+    .search-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 50px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 80%;
+    }
+    .search-field {
+      display: flex;
+      flex-direction: column;
+    }
+    .search-field label {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .search-field input {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .search-button {
+      padding: 10px 20px;
+      background-color: #ff7b47;
+      color: white;
       border: none;
       border-radius: 5px;
-      text-decoration: none;
-      font-size: 1rem;
+      cursor: pointer;
     }
-    .form-section {
-      display: flex;
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .form-section input,
-    .form-section select,
-    .form-section button {
-      padding: 10px;
-      border: 1px solid : white;
-      border-radius : 5px;
-      font-size : 1rem;
-    }
-    .form-section button {
-      background-color: rgba(255, 94, 0, 0.979) ;
-      color: white;
-      border: none;
-      width: 150px;
-    }
-    .image-section img {
-      width: 400px;
-      border-radius: 200px;
-    
-    }
-
-
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Trabook <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/trabooklogo.5c9b07cddd138427d9fd191595e04136.svg" alt=""></h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#destination">Destination</a>
-            <a href="#tour">Tour</a>
-            <a href="#blog">Blog</a>
-            <a href="#login">Login</a>
-            <a href="#signup" style="color:rgba(255, 94, 0, 0.979) ;">Sign Up</a>
-          </nav>
-    </header>
+  <header>
+    <div class="logo">Trabook <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/trabooklogo.5c9b07cddd138427d9fd191595e04136.svg" alt=""></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Destination</a>
+      <a href="#">Tour</a>
+      <a href="#">Blog</a>
+    </nav>
+    <div class="actions">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="signup">Sign up</a>
+    </div>
+  </header>
 
-    <section class="hero-section">
-        <div class="text">
-            <h1>Get started your exciting journey with us.</h1>
-      <p>
-        A team of experienced tourism professionals will provide you with the best advice and tips for your desired place.
-      </p>
-      <a href="discover" class="btn">Discover Now</a>
-        
-  <div class="form-section">
-    <label for="location">Location</label>
-    <select name="" id="location"> <option value="Where are you going"></option></select>
-    <label for="date">Date</label>
-    <input type="date" name="" id="date">
-    <label for="guest">Guest</label>
-    <input type="number" name="" id="guest" placeholder="No of Guest">
-    <button>Explore Now</button>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Get started your exciting <span>journey</span> with us.</h1>
+      <p>A team of experienced tourism professionals will provide you with the best advice and tips for your desired place.</p>
+      <a href="#" class="cta-button">Discover Now</a>
+    </div>
+    <div class="image-section">
+      <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/heroimg.442efdbff8ad8b7f0151.png" alt="Traveler">
   </div>
-        </div>
-        <div class="image-section">
-            <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/heroimg.442efdbff8ad8b7f0151.png" alt="Traveler">
-        </div>
-    </section>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <div class="search-field">
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="Where are you going?">
+    </div>
+    <div class="search-field">
+      <label for="date">Date</label>
+      <input type="date" id="date">
+    </div>
+    <div class="search-field">
+      <label for="guests">Guests</label>
+      <input type="number" id="guests" placeholder="Number of guests">
+    </div>
+    <button class="search-button">Explore Now</button>
+  </section>
 </body>
 </html>
