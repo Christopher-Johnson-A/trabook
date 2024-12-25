@@ -102,15 +102,15 @@
       right: 10%;
     }
     .search-section {
-      display: flex;
-      justify-content: space-between;
-      padding: 30px 50px;
-      background: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      margin: 20px auto;
-      max-width: 80%;
-    }
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
     .search-field {
       display: flex;
       flex-direction: column;
@@ -132,7 +132,192 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+    } 
+    .sign-thing{
+       
+        justify-items: center;
     }
+    .sign-section{
+        background-color: rgb(240, 244, 247);
+        padding: 90px 90px 30px 90px;
+    }
+    .co{
+        display: flex;
+    }
+    .column{
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 30px 30px;
+    }
+    .image-container{
+        justify-content: center;
+        display: flex;
+        gap: 20px
+       }
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card-info .location {
+    color: #888;
+    font-size: 14px;
+}
+
+.card-info .rating {
+    color: #ff9900;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.card-info .price {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-info .old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.card-info .new-price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.book-now {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.book-now:hover {
+    background-color: #d35400;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.subscription-section {
+    background-color: #f26a21;
+    color: #ffffff; 
+    text-align: center;
+    padding: 50px 300px;
+    position: relative;
+    margin:0 ;
+    border-radius: 10px;
+    height: 300px;
+    font-size: large;
+}
+
+.subscription-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-top: 200px;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscription-form input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    outline: none;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #f26a21;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    width: 1000px;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+.footer-bottom p {
+    text-align:left ;
+    font-size: large;
+}
+.footer-bottom a {
+    text-align: right;
+    font-size: large;
+    
+}
+
   </style>
 </head>
 <body>
@@ -178,5 +363,182 @@
     </div>
     <button class="search-button">Explore Now</button>
   </section>
+ <section class="sign-section">
+    <div class="sign-thing">
+        <h1>Things you need <span style="color: #ff7b47;">to do</span></h1> <br>
+  <p>We ensure that you'll embark on a perfectly planned, <br>safe vacation at a price you can afford.</p>
+</div>
+<div class="co">
+<div class="column">
+    <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/signup.1e8454a1dd72f721f5eb5fa6ca556f92.svg" alt="">
+    <h1>Sign Up</h1>
+    <p>Completes all the work associated <br> with planning and processing</p>
+</div>
+<div class="column">
+     <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/worth.601d406f783b413f6749cb8e7c6a97cf.svg" alt="">
+     <h1>Worth of Money</h1>
+     <p>After successful access then book <br>from exclusive deals & pricing</p>
+</div>
+<div class="column">
+     <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/exciting.8a5ed66307335b83e850fb8ab1f26f9f.svg" alt="">
+     <h1>Exciting Travel</h1>
+     <p>Start and explore a wide range of <br>exciting travel experience</p>
+</div>
+</div>
+ </section>
+ <div>
+    <center>
+        <h1>Exclusive <span style="color: #ff7b47;">deals & discounts</span></h1>
+    <p>Discover our fantastic early booking discounts & <br> start planning your journey.</p>
+    </center>
+ </div>
+ <div class="card-container">
+    <div class="card">
+        <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/madrid.5189b4d7318ff014f3b9.png" alt="Madrid">
+        <div class="card-info">
+            <h3>Madrid</h3>
+            <p><span class="location">Spain</span></p>
+            <p><span class="rating">⭐ 4.8</span></p>
+            <p class="price"><span class="old-price">$950</span> <span class="new-price">$850</span></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/firenze.e952ca735f27066d9f14.png" alt="Firenze">
+        <div class="card-info">
+            <h3>Firenze</h3>
+            <p><span class="location">Italy</span></p>
+            <p><span class="rating">⭐ 4.5</span></p>
+            <p class="price"><span class="old-price">$850</span> <span class="new-price">$750</span></p>
+            
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/paris.1241eb4ff23076a6c294.png" alt="Paris">
+        <div class="card-info">
+            <h3>Paris</h3>
+            <p><span class="location">France</span></p>
+            <p><span class="rating">⭐ 4.4</span></p>
+            <p class="price"><span class="old-price">$699</span> <span class="new-price">$599</span></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/london.c4fcefdd877137a8c7f6.png" alt="London">
+        <div class="card-info">
+            <h3>London</h3>
+            <p><span class="location">UK</span></p>
+            <p><span class="rating">⭐ 4.8</span></p>
+            <p class="price"><span class="old-price">$850</span> <span class="new-price">$850</span></p>
+        </div>
+    </div>
+   
+<div>
+   <center>
+       <h1>Best  <span style="color: #ff7b47;">Vacation Plan</span></h1>
+   <p>Plan your perfect vacation with our travel agency. <br> Choose among hundreds of all-inclusive offers!</p>
+   </center>
+</div>
+<div class="card-container" style="padding-left: 150px;">
+   <div class="card">
+       <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/portofinoitaly.dedd6a40232325b0810c.jpg" alt="Madrid" style="width:250px; height: 250px;">
+       <div class="card-info">
+           <h3>Portofino,Italy</h3>
+           <p><span class="location">10 Days Trip</span></p>
+           <p><span class="rating">⭐ 4.9</span></p>
+           <p class="price"> <span class="new-price">$5,42k</span></p>
+       </div>
+   </div>
+   <div class="card">
+       <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/londoneye.19d9951a263cb54c6cab.jpg" alt="Firenze" style="width:250px; height: 250px;">
+       <div class="card-info">
+           <h3>London,UK</h3>
+           <p><span class="location">07 Days Trip</span></p>
+           <p><span class="rating">⭐ 4.8</span></p>
+           <p class="price"> <span class="new-price">$2,42k</span></p>
+           
+       </div>
+   </div>
+   <div class="card">
+       <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/osakajp.442f3cd25bfb62d0665d.jpg" alt="Paris" style="width:250px; height: 250px;">
+       <div class="card-info">
+           <h3>Osaka,Japan</h3>
+           <p><span class="location">10 Days Trip</span></p>
+           <p><span class="rating">⭐ 4.8</span></p>
+           <p class="price"> <span class="new-price">$5,42k</span></p>
+       </div>
+     
+
+   </div>
+   </div>
+   <div>
+    <h1>Get updated with <span style="color: #ff7b47;">our latest post</span></h1>
+   </div>
+   <div class="card-container">
+    <div class="card">
+        <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/area.d2298395c906f5673a12.png" alt="Madrid" style="height: fit-content;">
+        <div class="card-info">
+            <h3>The Amazing Difference a Year of Travelling.</h3>
+            <p><span class="location">July 27, 2021n</span></p>
+           
+        </div>
+    </div>
+    <div class="card">
+        <img  src="https://travelling-agency-lp-xf6p.vercel.app/static/media/beach.fe9b1e0d9e1e0b406c54.png" alt="Firenze" style="height: fit-content;">
+        <div class="card-info">
+            <h3>Travel far enough, you meet yourself.</h3>
+            <p><span class="location">July 27, 2021</span></p>
+            
+            
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/mosk.956b02ab3946077731db.png" alt="Paris" style="height: fit-content;">
+        <div class="card-info">
+            <h3>How to Save Money While Visiting Africa.</h3>
+            <p><span class="location">July 27, 2021</span></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/mountain.712d4d852a4f905f7e8d.png" alt="London" style="height: fit-content;">
+        <div class="card-info">
+            <h3>Reflections on 5 Months of Travel: Time to Hang.</h3>
+            <p><span class="location">July 27, 2021</span></p>
+        </div>
+    </div>
+
+    <div class="subscription-section">
+        <h1>Subscribe and get exclusive <br> deals & offer</h1>
+        <form class="subscription-form">
+            <input type="email" placeholder="Enter your mail" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div> <br>
+    <div class="social-media">
+   
+    <div>
+       <h1>Trabook <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/trabooklogo.5c9b07cddd138427d9fd191595e04136.svg" alt=""></h1> <br>
+       <b>Book your trip in minute, get full <br> Control for much longer.</b> <br>
+       <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/social__facebook.ca465f9bca6ce2f2d2b760e963b016a5.svg" alt="">
+       <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/social__insta.93bdc0b23ac63ce5d765.png" alt="" style="height:70px;">
+       <img src="https://travelling-agency-lp-xf6p.vercel.app/static/media/social__twitter.3dc211f2143529ae11560c6a0161b419.svg" alt="">
+    </div>
+    <div>
+        <b>Company</b> <p>About</p>  <p>Careers</p><p>Logistics</p><p> privacy & policy</p>
+    </div>
+    <div>
+        <b>Contact</b><p>Help/FAQ</p><p>Press</p><p>Affilates</p>
+    </div>
+    <div>
+        <b>More</b> <p>Press Centre</p><p>Our Blog</p> <p>Low fare tips</p>
+    </div>
+
+</div> <br>
+<div class="footer-bottom">
+    <h3>@Copyright, Trabook 2022. All rights reserved.</h3> <h3>Terms & Conditions</h3>
+    
+</div>
+</footer>
+
+</div>
+
 </body>
 </html>
